@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(9, 16, 46);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.466);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fdfdfd;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #fbfffc;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+
+.about_section {
+  background: url("extra1.jpg") no-repeat left;
+  background-size: 35%;
+  width: auto;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner_container {
+  width: 55%;
+  float: right;
+  background-color: rgb(37, 165, 165);
+  padding: 150px;
+}
+
+.inner_container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+
+.text {
+  font-size: 13px;
+  color: whitesmoke;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 255px;
+  display: inline-block;
+  display: center;
+}
+
+iframe {
+  height: 150px;
+  width: 225px;
+}
+
+.name-game {
+  text-align: center;
+}
+
+.ad {
+  color: white;
+}

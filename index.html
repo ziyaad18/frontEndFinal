@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="indexSignup.js">
+<link rel="stylesheet" href="account.js">
+<link rel="stylesheet" href="login.css">
+<title>Index</title>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="http://127.0.0.1:5500/index.html">Hompage</a>
+  <a href="http://127.0.0.1:5500/blogs.html">Blogs</a>
+  <a href="http://127.0.0.1:5500/contactPage.html">Contact</a>
+  <a href="http://127.0.0.1:5500/about.html">About</a>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+  
+
+
+ 
+</div>
+
+<header class="landing">
+
+    <div class="text">
+      <h1></h1>
+    </div>
+  </header>
+ 
+ <h1> <p style="color:white" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"   class="middle">What We Do</p></h1>
+<!--this is  teh introduction-->
+ <div class="center">
+   <p style="color:white">Hi, welcome to my blog. Over we post about videogames wheather it might be console or pc we got you covered. We love videogames just as much as you gamers.
+  we give you the latest games and of course some old noslatgic games aswell, but further more we got you with the latest online games to play and action, adventure, first person shooter we got all that and you 
+can even post your own blog about waht you like.</p>
+ </div><br><br>
+
+ <div class="row"> 
+  <div class="column">
+    <img src="absolution.jpg" style="width:100%">
+   
+  </div>
+  <div class="column">
+    <img src="honor.jpg" style="width:100%">
+
+  </div>  
+  <div class="column">
+    <img src="battle.jpg" style="width:100%">
+ 
+  </div>
+  <div class="column">
+    <img src="devil.jpg" style="width:100%">
+   
+  </div>
+</div>
+
+<h1> <p style="color:white"class="middle">Some Games</p></h1>
+
+</section>
+<div class="container">
+  <div class="grid">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="mon.jpg" alt="Avatar" style="width:400px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/zL46dpNEPPA"></iframe><br>
+        
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="mk11.jpeg" alt="Avatar" style="width:400px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <iframe width="400" height="300" src="https://www.youtube.com/embed/7zwQPJmg-Kg"></iframe><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <img src="infam.png" style="width:400px;height:300px">
+        </div>
+        <div class="flip-card-back">
+          <iframe width="400" height="300" src="https://www.youtube.com/embed/MlNfJvFnzc8"></iframe><br>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="last1.jpg" alt="Avatar" style="width:400px;height:300px;">
+        </div>
+        <div class="flip-card-back"> 
+          <iframe width="400" height="300" src="https://www.youtube.com/embed/8ZYkj0glnqs"></iframe><br>
+        </div>
+      </div>
+    </div>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('reg').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+      <form class="modal-content" action="https://127.0.0.1:5000/add-now/" onsubmit="createAccount()" id="reg">
+        <div class="container">
+          <h1>Sign up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="first_name"><b>First Name</b></label>
+          <input type="text" placeholder="First name" name="first_name" id="first_name" required>
+    
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Username" name="username" id="username" required>
+       
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+    
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" id="email" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+      
+    </div>
+    
+
+   
+     
+
+     
+      
+    </div>
+   <script src="account.js"></script>
+<!--Button to go to more blogs-->
+    <button id="myButton" class="float-left submit-button" >Go to blogs</button>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "http://127.0.0.1:5500/blogs.html";
+        };
+    </script>
+   
+</body>
+</html> 
